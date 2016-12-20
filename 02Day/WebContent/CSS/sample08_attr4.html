@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>속성 선택자</title>
+<style type="text/css">
+
+/* div태그의 속성값중에 man이 공백으로 구분된 */
+	div[class ~= "man"] {
+		color: green;	
+	}
+	
+</style>
+</head>
+<body>
+
+	<div class="man-news">man-news</div>
+	<div class="milk man">milk man</div>
+	<div class="letterman2">letterman2</div>
+	<div class="man">man</div>
+	<div class="superman">superman</div>
+
+</body>
+</html>

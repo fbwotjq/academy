@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	span {
+		color: blue;
+	}
+</style>
+</head>
+<body>
+<b>지원서 작성</b><br/>
+<hr/>
+<form action="submitOk.jsp" method="get">
+	<span>기본지원사항</span>
+	<table border="1">
+		<tr>
+			<th>응시분야</th>
+			<td>
+				<select name="part">
+					<option value="consulting">Consultiong</option>
+					<option value="iot">Iot</option>
+					<option value="bigdata">빅데이터</option>
+					<option value="rnd">R&D</option>
+				</select>
+				<select name="position">
+					<option value="staff">Staff</option>
+					<option value="new" selected="selected">신입</option>
+					<option value="career">경력</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<th>졸업여부</th>
+			<td>
+				<input type="radio" name="graduation" value="gy" checked="checked">졸업
+				<input type="radio" name="graduation" value="gn">졸업예정
+			</td>
+		</tr>
+	</table>
+	<span>기본인적사항</span>
+	<table border="1">
+		<tr>
+			<th>성명</th>
+			<td>
+				<input type="text" name="name" size="20"/>
+			</td>
+			<th colspan="2">
+				국적<input type="text" name="nation" size="20"/>
+			</th>
+		</tr>
+		<tr>
+			<th>영문이름</th>
+			<td>
+				성<input type="text" name="lastname" size="20"/>
+			</td>
+			<td colspan="2">
+				이름<input type="text" name="firstmane" size="20"/>
+			</td>
+		</tr>
+		<tr>
+			<th>이메일</th>
+			<td colspan="3">
+				<input type="text" name="emailf" size="20"/>@<input type="text" name="emailb" size="20"/>
+			</td>
+		</tr>
+		<tr>
+			<th>휴대전화</th>
+			<td colspan="3">
+				<input type="text" name="phone1" size="5"/>-<input type="text" name="phone2" size="5"/>-<input type="text" name="phone3" size="5"/>
+			</td>
+		</tr>
+	</table>
+	<span>어학사항</span>
+	<table border="1">
+		<tr>
+			<th>어학구분</th>
+			<td>
+				<select name="language">
+					<option value="english">영어</option>
+					<option value="chinese">중국어</option>
+					<option value="french" selected="selected">불어</option>
+					<option value="japanese">일본어</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<th>어학시험명</th>
+			<td>
+				<input type="text" name="langtitle" size="20"/>
+			</td>
+		</tr>
+		<tr>
+			<th>점수/등급</th>
+			<td>
+				<input type="text" name="point" size="20"/>/
+				<input type="text" name="level" size="20"/>
+			</td>
+		</tr>
+	</table>
+	<input type="submit" value="지원하기"/>
+	<input type="reset" value="다시작성하기"/>
+</form>
+</body>
+</html>

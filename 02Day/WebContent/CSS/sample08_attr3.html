@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>속성 선택자</title>
+<style type="text/css">
+
+/* div태그의 속성값중에 man을 포함한 모든 */
+	div[class *= "man"] {
+		color: green;	
+	}
+	
+</style>
+</head>
+<body>
+
+	<div class="man-news">man-news</div>
+	<div class="milk man">milk man</div>  <!-- 클래스명에 공백이 들어간 경우, 공백을 기준으로 여러개로 가진다. -->
+	<div class="letterman2">letterman2</div>
+	<div class="newmilk">newmilk</div>
+	<div class="superman">superman</div>
+
+</body>
+</html>

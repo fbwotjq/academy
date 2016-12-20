@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- method 방식은 반드시 post -->
+<!-- enctype="multipart/form-data" -->
+<!-- 주로 외부에서 제공하는 라이브러리 이용 => 파일 업로드하는 기능을, 우리가 만드는게 아니라 외부에서 제공해주는 기술 이용!
+	        : ex) apache에서 제공하는 fileUpload 라이브러리를 사용
+            : http://commons.apache.org/proper/commons-fileupload/
+-->
+<form action="check.html" method="post" enctype="multipart/form-data">
+
+	파일선택 : <input type="file" name="theFile"/>
+		
+	<input type="submit" value="전송"/>
+	<input type="reset" value="취소"/>
+</form>
+</body>
+</html>

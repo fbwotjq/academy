@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>속성 선택자</title>
+<style type="text/css">
+
+/* a태그의 속성값중에 https 로 시작하는 것만 */
+	a[href ^= "https"] {
+		color: green;
+	}
+	
+/* a태그의 속성값중에 net 으로 끝나는 것만 */
+	a[href $= "net"] {
+		font-size: 40px;
+	}
+	
+</style>
+</head>
+<body>
+
+	<a href="http://www.naver.com">one</a><br/>
+	<a href="https://www.naver.com">two</a><br/>
+	<a href="https://www.daum.net">three</a><br/>
+	<a href="http://www.daum.net">four</a><br/>
+	<a href="http://www.google.com">five</a><br/>
+	<a href="https://www.google.com">six</a><br/>
+
+</body>
+</html>
